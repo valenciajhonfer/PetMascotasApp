@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopcion de mascotas</title>
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/158509/isolated/lists/e6a3a6c0c9ee65435e3b5cb2aef9693f-perro-cachorro-plano.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/principal.css">
+    <link rel="stylesheet" href="styles/usuario.css">
+</head>
+
+<body id="home">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col mt-5 tituloPerfil">
+                    <h1 class="Headline1">Perfil</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="div-usuario">
+            <div class="row usuario">
+                <img src="https://scontent.fbog4-1.fna.fbcdn.net/v/t1.6435-9/122253247_2763903820602327_2903438486898310720_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHIMRuoi951EzPstDWAtMJwgkpH5_hXYT-CSkfn-FdhP5m2fWDQz-b1XqrYHpdW8ejTaaj5PfT3JBMOyWuYG5Fk&_nc_ohc=0dje8XH8-KUAX-ujMkj&_nc_ht=scontent.fbog4-1.fna&oh=00_AT-TLZt1nc-LAeQHDExFclRxbQxGJDcV6U54z0nDcRv2LA&oe=627F3BD7">
+                <div class="col datos">
+
+                </div>
+            </div>
+            <form id=formUsuario>
+                <div class="campo">
+                    <label for="name" class="form-label body1Regular label-edit">Nombre</label>
+                    <input id="name" class="ms-1 edit body1Regular form-control" type="text" placeholder="">
+                </div>
+                <div class="campo">
+                    <label for="lastName" class="form-label body1Regular label-edit">Apellido</label>
+                    <input id="lastName" class="ms-1 edit body1Regular form-control" type="text" placeholder="">
+                </div>
+                <div class="campo">
+                    <label for="email" class="form-label body1Regular label-edit">Correo</label>
+                    <input id="email" class="ms-1 edit body1Regular form-control" type="text" placeholder="">
+                </div>
+                <div class="campo">
+                    <p>
+                        <input type="file" name="photo"  id="file" class="form-label body1Regular label-edit" onchange="previewFile(this);" accept="image/x-png,image/gif,image/jpeg">
+                    </p>
+                    
+                    <div id="vistaPrevia"></div>
+                </div>
+               
+                
+
+                <div class="">
+                    <button type="submit" class="btn btn-secondary buttom guardar-cambios">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menu-mascotas">
+            <div class="container-fluid">
+                <a class="nav-link active" aria-current="page" href="index2.html" tabindex="-1">
+                    <img src="https://i.ibb.co/6gqbqj7/Property-1-home.png" alt="" width="24" height="24"></a>
+                <a class="nav-link-mensaje" aria-current="page" href="mensajes.html" tabindex="-1">
+                    <img src="https://i.ibb.co/SNtNhhC/Property-1-message-circle.png" alt="" width="24" height="24"></a>
+                <a class="nav-link" aria-current="page" href="favoritos.html" tabindex="-1">
+                    <img src="https://i.ibb.co/z23WHsF/Property-1-heart.png" alt="" width="24" height="24"></a>
+                <a class="nav-link" aria-current="page" href="#" tabindex="-1">
+                    <img class="icono-activo-perfil" src="https://i.ibb.co/2vzbqsF/perfil.png" alt="" width="24" height="24">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="module" src="app/usuario.js"></script>
+
+</html>
